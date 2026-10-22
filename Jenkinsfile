@@ -41,6 +41,11 @@ pipeline{
           }
         }
       }
+      stage('Show Parameter'){
+        steps{
+            echo 'Building in $params.ENVIRONMENT'
+        }
+      }
       stage('Archive Artifacts'){
         steps{
           sh 'python3 report.py'
