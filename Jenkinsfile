@@ -1,5 +1,5 @@
 pipeline{
-  agent any{
+  agent any
     environment{
       DOCKER_IMAGE='bramag/disaster-relief'
       APP_DIR='set5'
@@ -62,7 +62,6 @@ pipeline{
           }
       }
     }
-  }
 }
         
       
