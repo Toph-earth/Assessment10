@@ -49,7 +49,7 @@ pipeline{
       stage('Archive Artifacts'){
         steps{
           sh 'python3 report.py'
-          archiveArtifacts artifact: 'report.txt', fingerprint: true
+          archiveArtifacts artifacts: 'report.txt', fingerprint: true
         }
     }
     }
