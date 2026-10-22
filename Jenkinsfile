@@ -52,6 +52,7 @@ pipeline{
           archiveArtifacts artifact: 'report.txt', fingerprint: true
         }
     }
+    }
     post {
       failure {
         echo "Build failed. Rolling back $DEPLOYMENT_NAME"
