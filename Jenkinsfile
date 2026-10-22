@@ -16,7 +16,7 @@ pipeline{
       stage('Clone Code'){
         steps{
           git branch: 'main',
-            url: ''
+            url: 'https://github.com/Toph-earth/Assessment10.git'
         }
       }
       stage('Build Docker image'){
